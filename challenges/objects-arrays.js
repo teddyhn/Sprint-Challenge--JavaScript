@@ -78,7 +78,7 @@ const graduates = [{"id":1,"first_name":"Cynde","university":"Missouri Southern 
 Once you have the new array created, sort the universities alphabetically and log the result. */
 const universities = graduates.filter(graduate => graduate.university);
 
-universities.sort(function(a, b){
+universities.sort((a, b) => {
   let x = a.university;
   let y = b.university;
   if (x < y) {return -1;}
@@ -95,7 +95,7 @@ Name email@example.com
 
 Log the result of your new array. */
 const contactInfo = [];
-graduates.forEach(function(graduate) {
+graduates.forEach(graduate => {
     contactInfo.push(`${graduate.first_name} ${graduate.email}`)
 })
 
